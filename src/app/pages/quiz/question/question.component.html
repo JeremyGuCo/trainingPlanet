@@ -1,9 +1,16 @@
-<div>
+<div *ngIf="!showTransition">
   <h1>{{question[i].question}}</h1>
   <section class="example-section">
-    <mat-checkbox class="example-margin">{{question[i].wrong}}</mat-checkbox>
-    <mat-checkbox class="example-margin">{{question[i].wrong2}}</mat-checkbox>
-    <mat-checkbox class="example-margin">{{question[i].good}}</mat-checkbox>
+    <mat-checkbox class="example-margin" (click)="score(0)" color="warn">{{question[i].wrong}}</mat-checkbox>
+    <mat-checkbox class="example-margin" (click)="score(0)" color="warn">{{question[i].wrong2}}</mat-checkbox>
+    <mat-checkbox class="example-margin" (click)="score(1)" color="primary">{{question[i].good}}</mat-checkbox>
   </section>
-  <button (click)="nextQuestion()">Réponse</button>
+  <button (click)="nextQuestion()" mat-raised-button color="primary">Question suivante</button>
+</div>
+
+<div *ngIf="showTransition">
+  <h1>Ton score est de {{userScore}}</h1>
+  <h2 *ngIf="userScore ===3"> Parfait, tu n'as eu que des bonnes réponses. Approfondissons le sujet !</h2>
+  <h2 *ngIf="userScore ===2"> 1 mauvaise réponse, très bien. Approfondissons le sujet ! </h2>
+  <h2 *ngIf="userScore ===1"> Nous allons apprendre ensemble</h2>
 </div>

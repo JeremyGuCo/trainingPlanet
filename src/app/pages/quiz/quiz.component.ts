@@ -19,7 +19,14 @@ export class QuizComponent implements OnInit {
     },
     {
       'idQuestion': 2,
-      'question': 'Quelle est ?',
+      'question': 'Quelle est azerty ?',
+      'wrong': 'qsdfgh',
+      'wrong2': 'ghjkl',
+      'good': 'sddfg' 
+    },
+    {
+      'idQuestion': 3,
+      'question': 'Quelle est adfgdzerty ?',
       'wrong': 'qsdfgh',
       'wrong2': 'ghjkl',
       'good': 'sddfg' 
