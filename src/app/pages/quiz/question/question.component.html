@@ -1,0 +1,9 @@
+<div>
+  <h1>{{question[i].question}}</h1>
+  <section class="example-section">
+    <mat-checkbox class="example-margin">{{question[i].wrong}}</mat-checkbox>
+    <mat-checkbox class="example-margin">{{question[i].wrong2}}</mat-checkbox>
+    <mat-checkbox class="example-margin">{{question[i].good}}</mat-checkbox>
+  </section>
+  <button (click)="nextQuestion()">Réponse</button>
+</div>

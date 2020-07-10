@@ -1,1 +1,60 @@
 /* You can add global styles to this file, and also import other style files */
+/**
+ * Fonts
+ */
+@font-face {
+  font-family: 'Avenir-Heavy';
+  src: url('/assets/fonts/AvenirNextLTPro-Heavy.otf'), url('/assets/fonts/AvenirNextLTPro-Heavy.eot');
+}
+
+@font-face {
+  font-family: "Avenir-Regular";
+  src: url("/assets/fonts/AvenirNextLTPro-Regular.otf"),
+    url("/assets/fonts/AvenirNextLTPro-Regular.eot");
+}
+
+@font-face {
+  font-family: "Avenir-Bold";
+  src: url("/assets/fonts/AvenirNextCyr-Bold.eot"),
+    url("/assets/fonts/AvenirNextCyr-Bold.ttf");
+}
+
+@font-face {
+  font-family: "Avenir-Demi";
+  src: url("/assets/fonts/AvenirNextCyr-Demi.eot"),
+    url("/assets/fonts/AvenirNextCyr-Demi.ttf");
+}
+
+@font-face {
+  font-family: "Avenir-CondensedHeavy";
+  src: url("/assets/fonts/AvenirNextCondensed-Heavy.ttf");
+}
+
+@font-face {
+  font-family: "AvenirNextCondensed-Heavy";
+  src: url("/assets/fonts/AvenirNextCondensed-Heavy.ttf");
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: Roboto, 'Helvetica Neue', sans-serif;
+}
+
+h1 {
+  font-family: Avenir-Heavy, Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 30px;
+  letter-spacing: normal;
+  color: #000099;
+  margin-left: 17px;
+  vertical-align: middle;
+  text-transform: uppercase;
+}
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
